@@ -8,7 +8,7 @@
       "price": "$800",
       "color": "Green",
       "purchased": false,
-      "description": "Pretty rough shape, but it has power windows and there's a 12 disc changer in the back, so party on Wayne."
+      "description": "Pretty rough shape, but it has power windows and there's a 12 disc changer in the back, party on Wayne."
     },
     {
       "make": "Ford",
@@ -17,7 +17,7 @@
       "price": "$3,000",
       "color": "Lightblue",
       "purchased": false,
-      "description": "Not too shabby, the 'Check Electrical System' alarm likes to go off, but it's nothing to worry about." 
+      "description": "Not too shabby, the 'Check Charging System' alarm likes to go off, but that doesn't seem to affect performance, so likely not a big deal." 
     },
     {
       "make": "BMW",
@@ -27,15 +27,6 @@
       "color": "Silver",
       "purchased": false,
       "description": "Briefly owned, but in perfect condition.  Not really sure why the VIN number's scratched out." 
-    },
-    {
-      "make": "Ford",
-      "model": "Taurus",
-      "year": "2006",
-      "price": "$3000",
-      "color": "Lightblue",
-      "purchased": false,
-      "description": "Not too shabby, the 'Check Electrical System' alarm likes to go off, but it's nothing to worry about." 
     }
   ]
 }
