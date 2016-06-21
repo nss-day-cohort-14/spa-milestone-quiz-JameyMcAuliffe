@@ -1,4 +1,8 @@
 
+body {
+	background-color: lemonchiffon;
+}
+
 .rodeo {
 	border: solid 2px green;
 	border-radius: 2%;
@@ -12,4 +16,19 @@
 .m83 {
 	border: solid 2px silver;
 	border-radius: 2%;
+}
+
+.targeted-rodeo {
+	border: solid 5px green;
+	background-color: gold;
+}
+
+.targeted-taurus {
+	border: solid 5px lightblue;
+	background-color: gold;
+}
+
+.targeted-m83 {
+	border: solid 5px silver;
+	background-color: gold;
 }
