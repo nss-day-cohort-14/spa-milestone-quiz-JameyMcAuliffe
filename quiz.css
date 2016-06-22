@@ -6,16 +6,19 @@ body {
 .rodeo {
 	border: solid 2px green;
 	border-radius: 2%;
+	background-color: white;
 }
 
 .taurus {
-	border: solid 2px lightblue;
+	border: solid 2px blue;
 	border-radius: 2%;
+	background-color: white;
 }
 
 .m83 {
-	border: solid 2px silver;
+	border: solid 2px red;
 	border-radius: 2%;
+	background-color: white;
 }
 
 .targeted-rodeo {
@@ -24,11 +27,11 @@ body {
 }
 
 .targeted-taurus {
-	border: solid 5px lightblue;
+	border: solid 5px blue;
 	background-color: gold;
 }
 
 .targeted-m83 {
-	border: solid 5px silver;
+	border: solid 5px red;
 	background-color: gold;
 }
