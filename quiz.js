@@ -11,7 +11,7 @@ function populatePage (inventory) {
    	var currentCar = inventory[i];
     list = document.getElementById(i);
     price = `<h1>${currentCar.price}</h1>`
-    title = `<h3>${currentCar.year + " " + currentCar.make + " " + currentCar.model}</h3>`;
+    title = `<h3 class="rodeo-title">${currentCar.year + " " + currentCar.make + " " + currentCar.model}</h3>`;
     description = `<p>${currentCar.description}</p>`;
     list.innerHTML = price;
     list.innerHTML += title;

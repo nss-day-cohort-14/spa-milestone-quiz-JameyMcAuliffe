@@ -8,24 +8,21 @@ body {
 .m83 {
 	text-align: center;
 	padding: 0px 3px;
-}
-
-.rodeo {
-	border: solid 2px green;
 	border-radius: 2%;
 	background-color: white;
 }
 
+.rodeo {
+	border: solid 2px green;
+}
+
 .taurus {
 	border: solid 2px blue;
-	border-radius: 2%;
 	background-color: white;
 }
 
 .m83 {
 	border: solid 2px red;
-	border-radius: 2%;
-	background-color: white;
 }
 
 .targeted-rodeo {

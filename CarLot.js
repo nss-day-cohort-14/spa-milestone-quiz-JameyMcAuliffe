@@ -14,7 +14,7 @@ var CarLot = (function () {
       inventoryLoader.addEventListener("load", function () {
         inventory = JSON.parse(this.responseText).cars;
         
-        //pasing inventory into the populatePage function from quiz.js
+        //passing inventory into the populatePage function from quiz.js
         populatePage(inventory);
         
       });
