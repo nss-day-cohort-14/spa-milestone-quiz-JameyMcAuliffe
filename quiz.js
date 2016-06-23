@@ -19,6 +19,8 @@ function populatePage (inventory) {
   }
 
   // Now that the DOM is loaded, establish all the event listeners needed
+
+
   CarLot.activateEvents();
 }
 
@@ -58,7 +60,7 @@ CarLot.loadInventory();
 // //Rodeo click to expand border
 // var rodeo = document.getElementById("0").addEventListener("click", function(event){
 // 	// event.target.style.borderWidth = "4px";
-// 	// event.target.style.backgroundColor = "gold";
+	
 // 	event.target.classList.add("targeted-rodeo");
 // 	textBox.value = "";
 // 	textBox.focus();

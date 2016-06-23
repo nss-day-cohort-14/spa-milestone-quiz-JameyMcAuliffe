@@ -10,17 +10,26 @@ var CarLot = (function(oldCarLot){
 
 		//Rodeo click to expand border
 		var rodeo = document.getElementById("0").addEventListener("click", function(event){
-			event.target.classList.add("targeted-rodeo");
-
+			event.currentTarget.classList.add("targeted-rodeo");
 			textBox.value = "";
 			textBox.focus();
 			textBox.select();
 			lastEvent = event.target.id;
 			document.getElementById("1").classList.remove("targeted-taurus");
 			document.getElementById("2").classList.remove("targeted-m83");
-		});
 
+		});
+		  var carCards = document.getElementsByClassName("cards");
+		  for (var i = 0; i < carCards.length; i++) {
+		    carCards[i].addEventListener("click", doThings);
+		  }
 	};
+
+	function doThings(event) {
+
+		// all your sweet code
+		// event.target.style.border = `4px solid ${color}`;
+	}
 
 	return oldCarLot;
 
