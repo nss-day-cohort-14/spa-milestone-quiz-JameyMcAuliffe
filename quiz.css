@@ -3,6 +3,13 @@ body {
 	background-color: lemonchiffon;
 }
 
+.rodeo,
+.taurus,
+.m83 {
+	text-align: center;
+	padding: 0px 3px;
+}
+
 .rodeo {
 	border: solid 2px green;
 	border-radius: 2%;

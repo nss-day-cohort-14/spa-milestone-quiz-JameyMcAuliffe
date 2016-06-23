@@ -15,7 +15,7 @@
       "model": "Taurus",
       "year": "2006",
       "price": "$3,000",
-      "color": "Lightblue",
+      "color": "Blue",
       "purchased": false,
       "description": "Not too shabby, the 'Check Charging System' alarm likes to go off, but that doesn't seem to affect performance, so likely not a big deal." 
     },
@@ -24,7 +24,7 @@
       "model": "M3",
       "year": "2016",
       "price": "$65,000",
-      "color": "Silver",
+      "color": "Red",
       "purchased": false,
       "description": "Briefly owned, but in perfect condition.  Not really sure why the VIN number's scratched out." 
     }
