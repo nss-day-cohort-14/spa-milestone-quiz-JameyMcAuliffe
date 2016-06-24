@@ -37,6 +37,7 @@ CarLot.loadInventory();
 
 
 
+
 //var textBox = document.getElementById("edit");
 
 // inventoryLoader.addEventListener("load", function () {
