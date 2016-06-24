@@ -1,58 +1,58 @@
 
 var CarLot = (function(oldCarLot){
 
+	var textBox = document.getElementById("edit");
+	var lastEvent;
+
 	//function to create event handlers
 	CarLot.activateEvents = function() {
 
-		  //var carCards = document.getElementsByClassName("cards");
-		  for (var i = 0; i < 3; i++) {
-		    document.getElementById(i).addEventListener("click", cardClick);
-		  }
+		//Card click handler
+		for (var i = 0; i < CarLot.getInventory().length; i++) {
+		  document.getElementById(i).addEventListener("click", cardClick);
+		}
 
-		  //button handler
-		  document.getElementById("button").addEventListener("click", buttonClick)
+		//input handler
+		textBox.addEventListener("keyup", editDescription);
+
+		//button handler
+		document.getElementById("button").addEventListener("click", buttonClick);
 	};
 
-	function cardClick(event) {
-		var color;
-		var carId = event.currentTarget.id;
-		var rodeo = document.getElementById("0");
-		var taurus = document.getElementById("1");
-		var m83 = document.getElementById("2");
-		var textBox = document.getElementById("edit");
 		
-		// if statement setting the proper border color based on car ids, 
-		// as well as removing styling from previously clicked cards
-		if (carId === "0") {
-			color = "green";
-			taurus.removeAttribute("style");
-			m83.removeAttribute("style");
-		}
-		else if (carId === "1") {
-			color = "blue";
-			rodeo.removeAttribute("style");
-			m83.removeAttribute("style");
-		}
-		else {
-			color = "red";
-			rodeo.removeAttribute("style");
-			taurus.removeAttribute("style");
-		}
-
-		event.currentTarget.style.border = `4px solid ${color}`;
-		event.currentTarget.style.backgroundColor = "gold";
-
-		//Clearing the text input, adding focus and placing the cursor inside
-		//lastEvent holds the id of the card that will be edited with the text input
-		textBox.value = "";
+	function cardClick(event) {
+		
+	//Clearing the text input, adding focus and placing the cursor inside
+	//lastEvent holds the id of the card that will be edited with the text input
+	 	textBox.value = "";
 		textBox.focus();
 		textBox.select();
-		lastEvent = event.target.id;
-	}
+		lastEvent = event.currentTarget.id;
+	};
+
+	function editDescription(event) {
+
+		//if statement using value of lastEvent to determine which card's p tag will be edited
+		if (lastEvent === "0") {
+			document.getElementById("car--0").innerHTML = event.target.value;
+		}
+		else if (lastEvent === "1") {
+			document.getElementById("car--1").innerHTML = event.target.value;
+		}
+		else if (lastEvent === "2") {
+			document.getElementById("car--2").innerHTML = event.target.value;
+		}
+		else {
+
+		}
+	};
 
 	function buttonClick(event) {
 
-	}
+		//clears text input and value of lastEvent, essentially saving the innerHTML of the edited p tag
+		textBox.value = "";
+		lastEvent = "";
+	};
 
 	return oldCarLot;
 
