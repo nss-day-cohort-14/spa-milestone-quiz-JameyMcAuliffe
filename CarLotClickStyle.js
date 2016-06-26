@@ -1,4 +1,36 @@
 
+var CarLot = (function(oldCarLot){
+
+
+	var color;
+	
+	var car1 = document.getElementById("0");
+	var car2 = document.getElementById("1");
+	var car3 = document.getElementById("2");
+
+	CarLot.selectStyle = function(carId, color) {
+		if (carId === car1) {
+			color = "green";
+		}
+		else if (carId === car2) {
+			color = "blue";
+		}
+		else {
+			color = "red";
+		}
+		event.currentTarget.style.border = `4px solid ${color}`;
+		event.currentTarget.style.backgroundColor = "gold";
+	};
+
+	return oldCarLot;
+})(CarLot);
+
+	
+
+
+
+
+
 	// var color;
 	// 	var carId = event.currentTarget.id;
 	// 	var rodeo = document.getElementById("0");
@@ -26,3 +58,4 @@
 
 		// event.currentTarget.style.border = `4px solid ${color}`;
 		// event.currentTarget.style.backgroundColor = "gold";
+

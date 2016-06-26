@@ -26,5 +26,3 @@ var CarLot = (function () {
   }
 
 })();
-
-//CarLot.loadInventory();
