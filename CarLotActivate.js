@@ -28,6 +28,7 @@ var CarLot = (function(oldCarLot){
 		textBox.focus();
 		textBox.select();
 		lastEvent = event.currentTarget.id;
+		CarLot.selectStyle(document.getElementById(lastEvent), "gold");
 	};
 
 	function editDescription(event) {
@@ -43,7 +44,7 @@ var CarLot = (function(oldCarLot){
 			document.getElementById("car--2").innerHTML = event.target.value;
 		}
 		else {
-
+			
 		}
 	};
 
@@ -51,7 +52,9 @@ var CarLot = (function(oldCarLot){
 
 		//clears text input and value of lastEvent, essentially saving the innerHTML of the edited p tag
 		textBox.value = "";
+		CarLot.resetStyle(lastEvent);
 		lastEvent = "";
+
 	};
 
 	return oldCarLot;
