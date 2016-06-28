@@ -16,7 +16,7 @@
       "year": "2006",
       "price": "$3,000",
       "color": "Blue",
-      "purchased": false,
+      "purchased": true,
       "description": "Not too shabby, the 'Check Charging System' alarm likes to go off, but that doesn't seem to affect performance, so likely not a big deal." 
     },
     {

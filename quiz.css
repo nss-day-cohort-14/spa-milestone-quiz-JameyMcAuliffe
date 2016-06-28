@@ -3,39 +3,28 @@ body {
 	background-color: lemonchiffon;
 }
 
-.rodeo,
-.taurus,
-.m83 {
+.car-001,
+.car-002,
+.car-003 {
 	text-align: center;
 	padding: 0px 3px;
 	border-radius: 2%;
 	background-color: white;
+	height: 500px;
 }
 
-.rodeo {
+.car-001 {
 	border: solid 2px green;
 }
 
-.taurus {
+.car-002 {
 	border: solid 2px blue;
-	background-color: white;
 }
 
-.m83 {
+.car-003 {
 	border: solid 2px red;
 }
 
-.targeted-rodeo {
-	border: solid 5px green;
-	background-color: gold;
-}
-
-.targeted-taurus {
-	border: solid 5px blue;
-	background-color: gold;
-}
-
-.targeted-m83 {
-	border: solid 5px red;
-	background-color: gold;
+.availability {
+	color: red;
 }

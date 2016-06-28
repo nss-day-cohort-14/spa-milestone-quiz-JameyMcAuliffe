@@ -10,7 +10,9 @@ var CarLot = (function(oldCarLot){
 
 	//accepts an id from buttonClick, removing the style attribute from that dom element
 	CarLot.resetStyle = function(id) {
-
+		// if (document.getElementById('${"car-"}').getAttribute("style") != null) {
+		// 	document.getElementById(id).removeAttribute("style");
+		// }
 		document.getElementById(id).removeAttribute("style");
 	};
 

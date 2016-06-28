@@ -4,6 +4,7 @@ var CarLot = (function(oldCarLot){
 	var textBox = document.getElementById("edit");
 	var lastEvent;
 
+
 	//function to create event handlers
 	CarLot.activateEvents = function() {
 
@@ -29,6 +30,7 @@ var CarLot = (function(oldCarLot){
 		textBox.select();
 		lastEvent = event.currentTarget.id;
 		CarLot.selectStyle(document.getElementById(lastEvent), "gold");
+		//CarLot.resetStyle();
 	};
 
 	function editDescription(event) {
