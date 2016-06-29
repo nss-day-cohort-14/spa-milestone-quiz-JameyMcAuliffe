@@ -15,7 +15,7 @@ function populatePage (inventory) {
     price = `<h1>${currentCar.price}</h1>`
     title = `<h3 class="rodeo-title">${currentCar.year + " " + currentCar.make + " " + currentCar.model}</h3>`;
     description = `<p id="car--${i}">${currentCar.description}</p>`;
-    
+
     if(currentCar.purchased === true) {
       availability = `<h4 class="availability">${"Sold Out"}</h4>`;
     }
@@ -33,8 +33,6 @@ function populatePage (inventory) {
   }
 
   // Now that the DOM is loaded, establish all the event listeners needed
-
-
   CarLot.activateEvents();
 }
 
