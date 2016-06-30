@@ -17,9 +17,10 @@ var CarLot = (function(oldCarLot){
 		currentTarget.style.backgroundColor = color;
 	};
 
-	//accepts an id from buttonClick, removing the style attribute from that dom element
-	CarLot.resetStyle = function(id) {
-		document.getElementById(id).removeAttribute("style");
+	//accepts an id from buttonClick, removing the style attribute from that dom element only if a card has been clicked on
+	 CarLot.resetStyle = function(id) {
+
+		id ? document.getElementById(id).removeAttribute("style") : "";
 	};
 
 	return oldCarLot;

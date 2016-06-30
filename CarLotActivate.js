@@ -32,21 +32,10 @@ var CarLot = (function(oldCarLot){
 		CarLot.selectStyle(document.getElementById(lastEvent), "gold");
 	};
 
+	//Binds the innerHTML of the clicked card with the keyup textbox event
 	function editDescription(event) {
 
-		//if statement using value of lastEvent to determine which card's p tag will be edited
-		if (lastEvent === "0") {
-			document.getElementById("car--0").innerHTML = event.target.value;
-		}
-		else if (lastEvent === "1") {
-			document.getElementById("car--1").innerHTML = event.target.value;
-		}
-		else if (lastEvent === "2") {
-			document.getElementById("car--2").innerHTML = event.target.value;
-		}
-		else {
-			
-		}
+		document.getElementById(`car--${lastEvent}`).innerHTML = event.target.value;
 	};
 
 	function buttonClick(event) {
